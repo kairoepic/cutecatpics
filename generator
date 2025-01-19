@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Picture Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐱 Cat Picture Generator</h1>
+    
+    <div class="pets-grid">
+      <div class="pet-box">
+        <h2>Random Cat Picture</h2>
+        <div id="cat-pic-container" class="media-container">
+          <img id="cat-pic" src="" alt="Random cat picture">
+        </div>
+        <div class="fun-fact">
+          <p id="cat-fact"></p>
+        </div>
+        <button onclick="generateCatPic()" class="generate-btn">New Cat Pic</button>
+        <div class="link-container">
+          <input type="text" id="cat-pic-link" readonly>
+          <button onclick="copyLink('cat-pic-link')" class="copy-btn">Copy Link</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast">Link copied to clipboard! 📋</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
